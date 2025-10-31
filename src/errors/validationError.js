@@ -1,6 +1,6 @@
 import BadRequest from './badRequest.js';
 
-class validationError extends BadRequest {
+class ValidationError extends BadRequest {
   constructor(error) {
     const errorsMessage = Object.values(error.errors)
       .map((error) => error.message)
@@ -10,4 +10,4 @@ class validationError extends BadRequest {
   }
 }
 
-export default validationError;
+export default ValidationError;
